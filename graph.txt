@@ -1,0 +1,70 @@
+// Binarne drzewo decyzyjne
+digraph {
+	B
+	C
+	A -> B [label=TAK]
+	A -> C [label=NIE]
+	A [label=K]
+	D
+	E
+	B -> D [label=TAK]
+	B -> E [label=NIE]
+	B [label=ZarobkiWysokie]
+	D [label=diesel]
+	F
+	G
+	E -> F [label=TAK]
+	E -> G [label=NIE]
+	E [label=WyksztWyzsze]
+	H
+	I
+	F -> H [label=TAK]
+	F -> I [label=NIE]
+	F [label=ZarobkiNiskie]
+	H [label=benzyna]
+	J
+	K
+	I -> J [label=TAK]
+	I -> K [label=NIE]
+	I [label=Dzieci0]
+	J [label=benzyna]
+	L
+	M
+	K -> L [label=TAK]
+	K -> M [label=NIE]
+	K [label=Dzieci1]
+	L [label=benzyna]
+	M [label=diesel]
+	G [label=benzyna]
+	N
+	O
+	C -> N [label=TAK]
+	C -> O [label=NIE]
+	C [label=ZarobkiNiskie]
+	P
+	Q
+	N -> P [label=TAK]
+	N -> Q [label=NIE]
+	N [label=WyksztWyzsze]
+	P [label=elektryczny]
+	R
+	S
+	Q -> R [label=TAK]
+	Q -> S [label=NIE]
+	Q [label="Dzieci>3"]
+	T
+	U
+	R -> T [label=TAK]
+	R -> U [label=NIE]
+	R [label=WyksztNiskie]
+	T [label=diesel]
+	V
+	W
+	U -> V [label=TAK]
+	U -> W [label=NIE]
+	U [label="Wiek<30"]
+	V [label=diesel]
+	W [label=elektryczny]
+	S [label=diesel]
+	O [label=elektryczny]
+}
